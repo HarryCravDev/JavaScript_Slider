@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.slider .slider_container {
+  height: 400px;
+  display: flex;
+  transform: translate(0);
+  transition: transform 0.8s ease;
+}
+.slider .slider_container img {
+  width: 100%;
+}
+.slider .slider_controls {
+  text-align: center;
+}
+
+/*# sourceMappingURL=/styles.c86c3119.css.map */
