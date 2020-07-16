@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .slider_container {
+    height: 400px;
+    display: flex;
+    transform: translate(0);
+    transition: transform 0.8s ease;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .slider_controls {
+    text-align: center;
+  }
+}
