@@ -5,7 +5,7 @@ export default class Slider {
     previousSelector = ".previous",
     nextSelector = ".next",
     transitionTime = 3000,
-  }) {
+  } = {}) {
     this.slider = document.querySelector(sliderSelector);
     this.slides = document.querySelectorAll(
       `${sliderContainerSelector} img`
@@ -19,7 +19,26 @@ export default class Slider {
     this.setEventListener();
   }
 
-  moveSlides() {}
+  moveSlides = () => {
+    this.sliderContainer.style.transform = `translateX(-${
+      this.currentSlide * this.slideSize
+    }px)`;
+  };
 
-  setEventListener() {}
+  nextSlide = () => {
+    this.currentSlide =
+      this.currentSlide >= this.slides - 1 ? 0 : this.currentSlide + 1;
+    this.moveSlides();
+  };
+
+  prevSlide = () => {
+    this.currentSlide =
+      this.currentSlide <= 0 ? this.slides - 1 : this.currentSlide - 1;
+    this.moveSlides();
+  };
+
+  setEventListener = () => {
+    this.prevBtn.addEventListener("click", this.prevSlide);
+    this.nextBtn.addEventListener("click", this.nextSlide);
+  };
 }
