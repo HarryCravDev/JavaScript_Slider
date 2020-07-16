@@ -1,7 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 .slider {
@@ -10,6 +9,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  position: relative;
 
   .slider_container {
     height: 400px;
@@ -23,6 +23,26 @@
   }
 
   .slider_controls {
-    text-align: center;
+    color: rgb(31, 31, 31);
+    font-size: 3rem;
+
+    .previous {
+      left: 20px;
+    }
+
+    .next {
+      right: 20px;
+    }
+
+    .previous,
+    .next {
+      width: 20px;
+      display: inline-block;
+      cursor: pointer;
+      opacity: 0.75;
+      transform: translateY(-50%);
+      top: 50%;
+      position: absolute;
+    }
   }
 }
