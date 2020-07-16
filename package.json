@@ -1,0 +1,24 @@
+{
+  "name": "javascript_slider",
+  "version": "1.0.0",
+  "description": "JavaScript Slider built using ES6 modules for reuseability.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarryCravDev/JavaScript_Slider.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarryCravDev/JavaScript_Slider/issues"
+  },
+  "homepage": "https://github.com/HarryCravDev/JavaScript_Slider#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
