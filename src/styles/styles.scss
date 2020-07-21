@@ -45,4 +45,29 @@
       position: absolute;
     }
   }
+
+  .shortcuts {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+
+    .shortcut {
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.75);
+      border-radius: 50%;
+      width: 20px;
+      margin: 0 5px;
+      transition: all 0.3 ease;
+
+      &:hover {
+        background-color: rgba(200, 200, 200, 0.75);
+      }
+      &.active {
+        background-color: rgba(100, 100, 100, 0.75);
+      }
+    }
+  }
 }

@@ -1,3 +1,4 @@
 import Slider from "./Slider";
 
-new Slider();
+// Init Slider & set autoPlay time
+new Slider({ transitionTime: 4000 });
